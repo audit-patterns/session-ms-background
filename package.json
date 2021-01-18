@@ -1,0 +1,49 @@
+{
+  "name": "@audit-patterns/session-ms-background",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "main": "index.js",
+    "test": "node_modules/.bin/jest",
+    "lint": "node_modules/.bin/eslint **/*.js --ignore-pattern node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:audit-patterns/sessions-ms-background.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "gcp",
+    "google cloud",
+    "cloud functions"
+  ],
+  "author": {
+    "name": "buffolander",
+    "email": "brdu1976@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "jest": "^24.7.1"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^9.4.2",
+    "papaparse": "^5.3.0",
+    "xlsx": "^0.16.9"
+  },
+  "defaultDependencies": {
+    "@google-cloud/pubsub": "^2.6.0",
+    "axios": "^0.20.0",
+    "crypto-js": "^4.0.0",
+    "fast-csv": "^4.3.2",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.31"
+  }
+}
