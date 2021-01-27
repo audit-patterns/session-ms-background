@@ -16,7 +16,7 @@ const openExcel = async (session, filepath, bufferedData) => {
   // Extract column headers and persist in Firestore
   const headerrefs = allrefs.filter(item => item.match(regexIsFirstRowCell))
   const columnHeaders = headerrefs.map(item => sheet[item].v)
-  await updateOriginalColumnHeaders(session, filepath, columnHeaders)
+  await updateOriginalColumnHeaders(session, filepath, ['', ...columnHeaders])
   return null
 }
 
